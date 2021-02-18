@@ -1,0 +1,132 @@
+@import "../../../assets/scss/variables";
+
+.serviceTitle {
+    h2 {
+        font-size: 36px;
+        line-height: 47px;
+
+        position: relative;
+        z-index: 1;
+
+        display: inline-block;
+
+        margin-bottom: 5px;
+
+        color: #010F54;
+        &::before {
+            position: absolute;
+            z-index: -1;
+            bottom: 4px;
+            left: -3px;
+
+            width: 100%;
+            height: 12px;
+
+            content: "";
+
+            background: linear-gradient(-90deg, #EFACA0, #FDE5E2);
+        }
+
+        @media #{$sm-layout} {
+            margin-top: -10px;
+        }
+    }
+    h3 {
+        font-size: 36px;
+        line-height: 39px;
+
+        position: relative;
+        z-index: 2;
+
+        display: inline-block;
+
+        margin-bottom: 42px;
+
+        color: #010F54;
+        &::before {
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+
+            width: 100%;
+            height: 12px;
+
+            content: "";
+
+            background: linear-gradient(-90deg, #EFACA0, #FDE5E2);
+        }
+    }
+    p {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+
+        margin-bottom: 32px;
+        padding-right: 23%;
+
+        color: #035E91;
+    }
+}
+
+.bestService {
+    display: flex;
+    flex-wrap: wrap;
+    .icon {
+        font-size: 40px;
+        line-height: 123px;
+
+        flex-basis: 31%;
+
+        height: 74%;
+        margin-right: 7px;
+
+        text-align: center;
+        @media #{$lg-layout} {
+            flex-basis: 20%;
+        }
+
+        @media #{$sm-layout} {
+            flex-basis: 25%;
+        }
+
+        @media #{$xs-layout} {
+            flex-basis: 30%;
+        }
+
+        @media #{$xxs-layout} {
+            flex-basis: 45%;
+        }
+
+        svg {
+            color: #E05941;
+        }
+    }
+    .content {
+        flex-basis: 67%;
+        @media #{$xxs-layout} {
+            flex-basis: 100%;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 47px;
+
+            margin-top: 25px;
+            margin-bottom: 6px;
+
+            transition: 0.4s;
+
+            color: #1344A5;
+
+            @media #{$xxs-layout} {
+                font-size: 20px;
+            }
+        }
+        p {
+            line-height: 25px;
+
+            margin: 0;
+        }
+    }
+}

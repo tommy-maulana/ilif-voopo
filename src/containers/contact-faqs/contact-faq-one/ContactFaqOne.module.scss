@@ -1,0 +1,197 @@
+@import "../../../assets/scss/variables";
+
+.faqInner {
+    padding-left: 65px;
+    .content {
+        h2 {
+            font-size: 36px;
+
+            color: #010F54;
+        }
+        p {
+            font-size: 16px;
+            line-height: 27px;
+
+            margin-bottom: 25px;
+
+            color: #010F54;
+        }
+        .inputBox {
+            input {
+                width: 100%;
+                height: 60px;
+                margin-bottom: 20px;
+                padding: 0 30px;
+
+                color: #035F91;
+                border: 0 none;
+                border-radius: 4px;
+                background: #F5F8FA none repeat scroll 0 0;
+                &:focus {
+                    border: 1px solid $theme-color;
+                }
+            }
+            textarea {
+                width: 100%;
+                min-height: 143px;
+                margin-bottom: 30px;
+                padding: 20px;
+
+                resize: none;
+
+                color: #035F91;
+                border: 0 none;
+                border-radius: 4px;
+                background: #F5F8FA none repeat scroll 0 0;
+                &:focus {
+                    border: 1px solid $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.faqInner .content .inputBox input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #035F91;
+}
+
+.faqInner .content .inputBox input::-moz-placeholder {
+    opacity: 1;
+    color: #035F91;
+}
+
+.faqInner .content .inputBox input:-ms-input-placeholder {
+    opacity: 1;
+    color: #035F91;
+}
+
+.faqInner .content .inputBox input:-moz-placeholder {
+    opacity: 1;
+    color: #035F91;
+}
+
+.faqInner .content .inputBox textarea::-webkit-input-placeholder {
+    opacity: 1;
+    color: #035F91;
+}
+
+.faqInner .content .inputBox textarea::-moz-placeholder {
+    opacity: 1;
+    color: #035F91;
+}
+
+.faqInner .content .inputBox textarea:-ms-input-placeholder {
+    opacity: 1;
+    color: #035F91;
+}
+
+.faqInner .content .inputBox textarea:-moz-placeholder {
+    opacity: 1;
+    color: #035F91;
+}
+
+.accHeader {
+    padding: 0 !important;
+    h5 {
+        margin: 0;
+        button {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 40px;
+
+            position: relative;
+
+            display: block;
+
+            width: 100%;
+            margin: 0;
+            padding: 10px 60px 10px 40px;
+
+            text-align: left;
+
+            color: #010F54;
+            border: 0 none;
+            background: #F5F8FA none repeat scroll 0 0;
+            span {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+
+                display: inline-block;
+
+                transform: translateY(-50%);
+                svg {
+                    font-size: 30px;
+                }
+            }
+
+            &:focus {
+                outline: none;
+            }
+            &.collapsed {
+                color: #010F54;
+            }
+        }
+    }
+}
+
+.panoraAccordion .cardBody {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding: 0 40px 26px;
+
+    color: #035F91;
+    background: #F5F8FA none repeat scroll 0 0;
+}
+
+.panoraAccordion .card {
+    position: relative;
+
+    margin-bottom: 30px;
+
+    border: 0 none;
+    border-radius: 4px;
+    background-color: #FFF;
+    background-clip: border-box;
+}
+
+.panoraAccordion .card:last-child {
+    margin-bottom: 0;
+}
+
+@media #{$lg-layout} {
+    .faqInner {
+        padding-left: 0;
+    }
+}
+
+@media #{$md-layout} {
+    .faqInner {
+        padding-left: 0;
+    }
+}
+
+@media #{$sm-layout} {
+    .faqInner {
+        padding-left: 0;
+    }
+    .faqInner .content h2 {
+        font-size: 29px;
+    }
+    .accHeader h5 a {
+        font-size: 17px;
+        line-height: 23px;
+    }
+}
+
+@media #{$xs-layout} {
+    .panoraAccordion .cardBody {
+        padding: 0 38px 16px;
+    }
+    .faqInner .content h2 {
+        font-size: 20px;
+    }
+}

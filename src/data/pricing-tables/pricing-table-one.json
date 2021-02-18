@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "planName": "Basic",
+    "planPriceCurrency": "$",
+    "planPrice": "29.11",
+    "planPriceDuration": "/month",
+    "planFeatures": "<ul><li>700 Minute Calls</li><li>2 IP Dedicated</li><li>10 Phone Number</li><li>Personal Server</li><li>15 Countries</li></ul>",
+    "orderUrl": "/contact",
+    "featured": false
+  },
+  {
+    "id": "2",
+    "planName": "Standard",
+    "planPriceCurrency": "$",
+    "planPrice": "39.11",
+    "planPriceDuration": "/month",
+    "planFeatures": "<ul><li>Unlimited Calls</li><li>10 IP Dedicated</li><li>Unlimited Phone Number</li><li>Business Server</li><li>160 Countries</li></ul>",
+    "orderUrl": "/contact",
+    "featured": true
+  },
+  {
+    "id": "3",
+    "planName": "Enterprise",
+    "planPriceCurrency": "$",
+    "planPrice": "59.11",
+    "planPriceDuration": "/month",
+    "planFeatures": "<ul><ul><li>Unlimited Calls</li><li>10 IP Dedicated</li><li>Unlimited Phone Number</li><li>Business Server</li><li>Any Countries</li></ul>",
+    "orderUrl": "/contact",
+    "featured": false
+  }
+]

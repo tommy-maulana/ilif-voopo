@@ -1,0 +1,54 @@
+@import "../../../assets/scss/variables";
+
+.voopoWorks {
+    padding: 115px 0;
+}
+
+.worksInner p {
+    font-size: 16px;
+    line-height: 27px;
+
+    margin: 0;
+    padding-right: 16%;
+
+    color: #EEF3F6;
+}
+
+.works {
+    display: flex;
+    .icons {
+        margin-right: 17px;
+        svg {
+            font-size: 16px;
+
+            color: #EEF3F6;
+        }
+    }
+    .content {
+        h2 {
+            font-size: 24px;
+            line-height: 27px;
+
+            margin-bottom: 20px;
+
+            color: #EEF3F6;
+        }
+        p {
+            font-size: 16px;
+            line-height: 27px;
+
+            margin: 0;
+
+            color: #EEF3F6;
+        }
+    }
+    & + .works {
+        margin-top: 40px;
+    }
+}
+
+@media #{$sm-layout} {
+    .voopoWorks {
+        padding: 60px 0;
+    }
+}

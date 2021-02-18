@@ -1,0 +1,140 @@
+@import "../../../assets/scss/variables";
+
+.voopoAboutArea {
+    position: relative;
+    z-index: 2;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .aboutThumb {
+        position: absolute;
+        top: -52px;
+        right: 0;
+    }
+}
+
+.aboutInner {
+    p {
+        font-size: 16px;
+        line-height: 27px;
+
+        margin: 0;
+        & + p {
+            margin-top: 29px;
+        }
+    }
+}
+
+@media #{$xx-layout} {
+    .voopoAboutArea .aboutThumb {
+        width: 59%;
+    }
+}
+
+@media #{$xlg-layout} {
+    .voopoAboutArea {
+        padding-bottom: 250px;
+    }
+    .voopoAboutArea .aboutThumb {
+        top: 50%;
+
+        width: 55%;
+
+        transform: translateY(-50%);
+    }
+    .voopoAboutArea .aboutThumb img {
+        width: 100%;
+    }
+}
+
+@media #{$lg-layout} {
+    .voopoAboutArea {
+        padding-bottom: 150px;
+    }
+    .voopoAboutArea .aboutThumb {
+        top: 50%;
+
+        width: 55%;
+
+        transform: translateY(-50%);
+    }
+    .voopoAboutArea .aboutThumb img {
+        width: 100%;
+    }
+    .aboutInner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media #{$md-layout} {
+    .voopoAboutArea {
+        padding-bottom: 150px;
+    }
+    .voopoAboutArea .aboutThumb {
+        position: inherit;
+        top: auto;
+
+        width: 100%;
+        margin-top: 30px;
+
+        transform: inherit;
+    }
+    .voopoAboutArea .aboutThumb img {
+        width: 100%;
+    }
+    .voopoAboutArea {
+        padding: 120px 0 90px;
+
+        background: #F8FAFB none repeat scroll 0 0;
+    }
+    .voopoAboutArea .aboutShape {
+        display: none;
+    }
+    .aboutInner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media #{$sm-layout} {
+    .voopoAboutArea {
+        padding-bottom: 150px;
+    }
+    .voopoAboutArea .aboutThumb {
+        position: inherit;
+        top: auto;
+
+        width: 100%;
+        margin-top: 30px;
+
+        transform: inherit;
+    }
+    .voopoAboutArea .aboutThumb img {
+        width: 100%;
+    }
+    .voopoAboutArea {
+        padding: 120px 0 90px;
+
+        background: #F8FAFB none repeat scroll 0 0;
+    }
+    .voopoAboutArea .aboutShape {
+        display: none;
+    }
+    .aboutInner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .works .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .voopoAboutArea {
+        padding: 60px 0;
+    }
+    .aboutInner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

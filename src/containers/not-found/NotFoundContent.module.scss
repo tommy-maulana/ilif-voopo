@@ -1,0 +1,57 @@
+@import "../../assets/scss/variables";
+
+.errorPageWrapper {
+    min-height: 600px;
+
+    @media #{$lg-layout,
+    $md-layout,
+    $xs-layout} {
+        min-height: 500px;
+    }
+
+    @media #{$xs-layout} {
+        min-height: 400px;
+    }
+
+    [class*="col-"] {
+        height: auto;
+        * {
+            height: auto;
+        }
+    }
+}
+
+.errorPageContentWrap {
+    font-size: 16px;
+
+    height: auto;
+    h2 {
+        font-size: 120px;
+        font-weight: 900;
+        line-height: 1;
+
+        color: #333;
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        @media #{$xs-layout} {
+            font-size: 100;
+        }
+    }
+
+    h3 {
+        font-size: 32px;
+
+        margin-bottom: 12px;
+
+        color: #333;
+
+        @media #{$xs-layout} {
+            font-size: 20px;
+
+            margin-bottom: 5px;
+        }
+    }
+    p {
+        margin-bottom: 30px;
+    }
+}

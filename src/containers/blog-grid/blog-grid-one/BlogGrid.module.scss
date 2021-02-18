@@ -1,0 +1,99 @@
+@import "../../../assets/scss/variables";
+
+.blog {
+    margin-top: 30px;
+
+    border-radius: 4px;
+    background: #FFF none repeat scroll 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    .thumb {
+        overflow: hidden;
+        a {
+            img {
+                width: 100%;
+
+                transition: all 0.5s ease 0s;
+            }
+        }
+    }
+    &:hover .thumb a img {
+        transform: scale(1.1);
+    }
+    .content {
+        padding: 30px;
+
+        border-bottom: 1px solid #E5EFF4;
+        span {
+            font-size: 12px;
+
+            color: #035F91;
+            a {
+                transition: all 0.3s ease 0s;
+
+                color: #035F91;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 38px;
+
+            margin-bottom: 12px;
+            a {
+                transition: 0.3s;
+
+                color: #010F54;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+        p {
+            margin: 0;
+            padding-right: 10%;
+        }
+    }
+    a {
+        &.readmoreBtn {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 52px;
+
+            display: inline-block;
+
+            height: 52px;
+            padding: 0 30px;
+
+            transition: all 0.5s ease 0s;
+
+            background: -webkit-linear-gradient(#E05A42, #EF998A);
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+            &:hover {
+                background: -webkit-linear-gradient(#035F91, #035F91);
+                -webkit-background-clip: text;
+
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+@media #{$sm-layout} {
+    .blog .content {
+        padding: 30px 20px;
+
+        border-bottom: 1px solid #E5EFF4;
+    }
+    .blog .content h2 {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .blog .content p {
+        padding-right: 0;
+    }
+}

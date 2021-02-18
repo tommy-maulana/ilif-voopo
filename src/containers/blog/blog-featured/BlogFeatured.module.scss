@@ -1,0 +1,108 @@
+@import "../../../assets/scss/variables";
+
+.banner {
+    position: relative;
+    .hoverAction {
+        position: absolute;
+        bottom: 0;
+
+        padding: 20px;
+        .bannerContent {
+            span {
+                font-size: 18px;
+                font-weight: 500;
+
+                color: #FFFFFF;
+            }
+            h3 {
+                margin-top: 8px;
+                margin-bottom: 18px;
+                a {
+                    font-size: 24px;
+                    font-weight: 500;
+
+                    display: inline-block;
+
+                    padding-right: 35%;
+
+                    transition: all 0.3s ease 0s;
+
+                    color: #FFFFFF;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+            .bannerBtn {
+                a {
+                    line-height: 40px;
+
+                    height: 40px;
+
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+.banner.b11 .hoverAction .bannerContent h3 a {
+    padding-right: 6%;
+}
+
+.banner .thumb img {
+    width: 100%;
+}
+.banner .hoverAction .bannerContent .bannerBtn a::before {
+    border-radius: 4px;
+}
+
+@media #{$lg-layout} {
+    .banner .hoverAction {
+        padding: 20px 15px;
+    }
+    .banner .hoverAction .bannerContent h3 a {
+        font-size: 19px;
+    }
+    .banner.b11 .hoverAction .bannerContent h3 a {
+        padding-right: 0;
+    }
+    .space--left {
+        padding-left: 30px;
+    }
+}
+
+@media #{$md-layout} {
+    .banner.b11 .hoverAction .bannerContent h3 a {
+        font-size: 22px;
+
+        padding-right: 0;
+    }
+    .space--left {
+        padding-left: 15px;
+    }
+}
+
+@media #{$sm-layout} {
+    .banner.b11 .hoverAction .bannerContent h3 a {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .space--left {
+        padding-left: 15px;
+    }
+    .banner .hoverAction {
+        bottom: 50%;
+
+        padding: 20px;
+
+        transform: translateY(50%);
+    }
+    .banner .hoverAction .bannerContent h3 {
+        margin-top: 9px;
+        margin-bottom: 15px;
+    }
+    .banner .hoverAction .bannerContent h3 a {
+        padding-right: 0;
+    }
+}

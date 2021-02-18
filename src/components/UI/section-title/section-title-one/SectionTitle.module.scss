@@ -1,0 +1,86 @@
+@import "../../../../assets/scss/variables";
+
+.sectionTitle {
+    margin-top: -10px;
+    span {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 40px;
+
+        color: #010F54;
+    }
+    h2 {
+        font-size: 36px;
+
+        margin-top: 4px;
+        margin-bottom: 0;
+
+        color: #010F54;
+    }
+}
+
+.sectionTitle2 {
+    span {
+        font-size: 18px;
+
+        color: #010F54;
+    }
+    h2 {
+        font-size: 36px;
+
+        position: relative;
+
+        margin-top: 4px;
+        margin-bottom: 35px;
+        padding-bottom: 40px;
+
+        color: #010F54;
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 150px;
+            height: 3px;
+
+            content: "";
+
+            background: linear-gradient(to left, #FCCEC8, #E05941);
+        }
+    }
+}
+
+@media #{$xlg-layout} {
+    .sectionTitle2 h2 {
+        margin-bottom: 22px;
+        padding-bottom: 21px;
+    }
+}
+
+@media #{$sm-layout} {
+    .sectionTitle2 h2 {
+        font-size: 27px;
+
+        margin-bottom: 24px;
+        padding-bottom: 21px;
+    }
+}
+
+@media #{$xs-layout} {
+    .sectionTitle2 h2 {
+        font-size: 22px;
+
+        margin-bottom: 24px;
+    }
+}
+
+@media #{$xxs-layout} {
+    .sectionTitle h2 {
+        font-size: 27px;
+
+        margin-top: 0;
+    }
+    .sectionTitle span {
+        font-size: 24px;
+    }
+}

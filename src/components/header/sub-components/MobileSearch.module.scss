@@ -1,0 +1,52 @@
+@import "../../../assets/scss/variables";
+
+.offcanvasMobileSearchArea {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    padding: 10px;
+
+    background-color: #E6E6E6;
+
+    input {
+        font-size: 16px;
+
+        display: block;
+
+        width: 100%;
+        padding: 9px 25px;
+
+        color: #222;
+        border: none;
+        background: #E6E6E6;
+
+        @media #{$sm-layout} {
+            font-size: 14px;
+
+            padding: 5px 15px;
+        }
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+
+        padding: 0;
+
+        transform: translateY(-50%);
+
+        color: #AAA;
+        border: none;
+        background: none;
+
+        svg {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+}

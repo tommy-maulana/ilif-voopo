@@ -1,0 +1,147 @@
+@import "../../../assets/scss/variables";
+
+.footerTop {
+    padding: 100px 0 90px;
+}
+
+.singleWidget {
+    .content {
+        p {
+            font-size: 16px;
+            line-height: 27px;
+
+            margin-top: 33px;
+            margin-bottom: 0;
+
+            color: #EEF3F6;
+        }
+    }
+    .ftTitle {
+        font-size: 24px;
+        line-height: 40px;
+
+        position: relative;
+
+        margin-bottom: 10px;
+        padding-bottom: 12px;
+
+        color: #EEF3F6;
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 170px;
+            height: 1px;
+
+            content: "";
+
+            background: #65788C none repeat scroll 0 0;
+        }
+    }
+    .ftContactLink {
+        margin: 0;
+        padding: 0;
+
+        list-style: outside none none;
+        li {
+            a {
+                font-size: 14px;
+                line-height: 42px;
+
+                transition: 0.3s;
+
+                color: #EEF3F6;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    padding: 28px 0;
+    .copyrightInner {
+        p {
+            margin: 0;
+
+            color: #62B1DE;
+        }
+    }
+}
+
+.socialIcon {
+    display: flex;
+    justify-content: flex-end;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: outside none none;
+    li {
+        a {
+            font-size: 22px;
+            line-height: 35px;
+
+            display: block;
+
+            width: 40px;
+            height: 40px;
+
+            transition: 0.3s;
+            text-align: center;
+
+            border-radius: 100%;
+            background: #02335B none repeat scroll 0 0;
+            &:hover {
+                background-color: $hover-color;
+                svg {
+                    color: #FFF;
+                }
+            }
+            svg {
+                color: #E46B56;
+            }
+        }
+        & + li {
+            margin-left: 30px;
+        }
+    }
+}
+
+.footer2 .singleWidget .ftTitle {
+    color: #010F54;
+}
+
+.footer2 .singleWidget .content p,
+.footer2 .singleWidget .ftContactLink li a {
+    color: #035F91;
+}
+
+.footer2 .singleWidget .ftContactLink li a:hover {
+    color: $theme-color;
+}
+
+.footer2 .singleWidget .ftTitle::before {
+    background: #C7D8DE none repeat scroll 0 0;
+}
+
+@media #{$lg-layout} {
+    .singleWidget .ftTitle::before {
+        width: 140px;
+    }
+}
+
+@media #{$xs-layout} {
+    .copyright .copyrightInner p {
+        text-align: center;
+    }
+    .socialIcon {
+        display: flex;
+        justify-content: center;
+    }
+    .ftSocialLink {
+        padding-top: 15px;
+    }
+}

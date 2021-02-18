@@ -1,0 +1,132 @@
+@import "../../../assets/scss/variables";
+
+.vpContactAddress {
+    padding: 120px 0;
+    h2 {
+        font-size: 36px;
+        line-height: 45px;
+
+        margin-bottom: 28px;
+
+        color: #010F54;
+    }
+    .vpAddress {
+        h4 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 45px;
+
+            position: relative;
+
+            margin-bottom: 17px;
+            padding-bottom: 10px;
+
+            color: #010F54;
+            &::before {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                width: 60px;
+                height: 3px;
+
+                content: "";
+
+                background: #E15D45 none repeat scroll 0 0;
+            }
+        }
+        p {
+            font-size: 18px;
+            line-height: 30px;
+
+            margin: 0;
+            padding-right: 32%;
+
+            color: #010F54;
+            a {
+                font-size: 18px;
+                line-height: 35px;
+
+                display: block;
+
+                transition: 0.3s;
+
+                color: #010F54;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+        & + .vpAddress {
+            margin-top: 20px;
+        }
+    }
+}
+
+.voopoAddress {
+    position: relative;
+}
+
+.googleMap {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 1077px;
+    height: 100%;
+}
+
+@media #{$xx-layout} {
+    .googleMap {
+        width: 800px;
+    }
+}
+
+@media #{$xlg-layout} {
+    .googleMap {
+        width: 700px;
+    }
+}
+
+@media #{$lg-layout} {
+    .googleMap {
+        width: 512px;
+    }
+}
+
+@media #{$md-layout} {
+    .googleMap {
+        width: 400px;
+    }
+}
+
+@media #{$sm-layout} {
+    .voopoContactForm h2 {
+        font-size: 25px;
+        line-height: 38px;
+
+        margin-bottom: 18px;
+    }
+    .contactThumb {
+        margin-top: 30px;
+    }
+    .contactThumb img {
+        width: 100%;
+    }
+    .vpContactAddress h2 {
+        font-size: 25px;
+    }
+
+    .vpContactAddress .vpAddress p {
+        padding-right: 0;
+    }
+    .googleMap {
+        position: inherit;
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 1077px;
+        height: 500px;
+    }
+}

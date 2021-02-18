@@ -1,0 +1,73 @@
+@import "../../../assets/scss/variables";
+@import "../hero-slider-one/HeroSliderOne.module.scss";
+
+.heroSlider {
+    .htSwiperButtonNav {
+        font-size: 40px;
+
+        width: 50px;
+        height: 50px;
+        padding: 0;
+
+        color: #FFF;
+        border: none;
+        background: none;
+
+        &:after {
+            font-size: 0;
+        }
+    }
+
+    .swiperButtonPrev {
+        left: 50px;
+    }
+
+    .swiperButtonNext {
+        right: 50px;
+    }
+}
+
+.sliderTwo {
+    .sliderFixedHeight {
+        height: 900px;
+    }
+    .slide {
+        padding-bottom: 10px;
+    }
+}
+
+// Responsive Css
+
+@media #{$xlg-layout} {
+    .sliderTwo .sliderFixedHeight {
+        height: 700px;
+    }
+}
+
+@media #{$lg-layout} {
+    .sliderTwo .slide {
+        padding-top: 41px;
+        padding-bottom: 0;
+    }
+}
+
+@media #{$md-layout} {
+    .sliderTwo .sliderFixedHeight {
+        height: 700px;
+    }
+    .sliderTwo .slide {
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+}
+
+@media #{$sm-layout} {
+    .sliderTwo .sliderFixedHeight,
+    .sliderOne .sliderFixedHeight {
+        height: auto;
+    }
+    .sliderTwo .slide {
+        padding-top: 167px;
+        padding-bottom: 70px;
+    }
+}

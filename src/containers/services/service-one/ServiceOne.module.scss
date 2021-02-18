@@ -1,0 +1,64 @@
+@import "../../../assets/scss/variables";
+
+.voopoService {
+    &.servicePosition {
+        position: relative;
+        z-index: 9;
+        top: -120px;
+    }
+}
+
+.voopoServiceWrapper {
+    @media #{$md-layout,
+    $sm-layout} {
+        margin-top: -40px;
+    }
+}
+
+.service {
+    padding: 46px 38px;
+
+    transition: 0.5s;
+
+    border-radius: 10px;
+    background: #FFF none repeat scroll 0 0;
+    box-shadow: 0 0 15px rgba(19, 68, 165, 0.1);
+    &:hover {
+        transform: translateY(-10px);
+    }
+    img {
+        height: 38px;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+
+        margin-top: 22px;
+
+        transition: 0.3s;
+
+        color: #1344A5;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.voopoService {
+    &.servicePosition {
+        position: relative;
+        top: -120px;
+        @media #{$lg-layout,
+        $md-layout} {
+            top: 0;
+
+            padding: 120px 0;
+        }
+        @media #{
+        $sm-layout} {
+            top: 0;
+
+            padding: 70px 0;
+        }
+    }
+}

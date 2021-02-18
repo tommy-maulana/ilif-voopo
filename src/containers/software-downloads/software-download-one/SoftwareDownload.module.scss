@@ -1,0 +1,209 @@
+@import "../../../assets/scss/variables";
+.voopoSoftware {
+    padding-bottom: 325px;
+    .sftBgColor {
+        padding-top: 172px;
+        padding-bottom: 92px;
+
+        background: linear-gradient(to bottom, #1344A4, #011156);
+    }
+    .shape1 {
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+    }
+    .content {
+        h2 {
+            font-size: 36px;
+            line-height: 47px;
+
+            color: #EEF3F6;
+        }
+        p {
+            font-size: 16px;
+            line-height: 26px;
+
+            margin-bottom: 24px;
+
+            color: #EEF3F6;
+            & + p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.downloadBtn {
+    display: flex;
+
+    margin: 80px -20px 0;
+    padding: 0;
+
+    list-style: outside none none;
+    li {
+        margin: 0 20px;
+        a {
+            font-size: 16px;
+            line-height: 50px;
+
+            display: inline-block;
+
+            height: 50px;
+            padding: 0 40px;
+
+            transition: all 0.5s ease 0s;
+            text-align: center;
+
+            color: #EEF3F6;
+            border-radius: 26px;
+            background: #010F54 none repeat scroll 0 0;
+            img {
+                padding-left: 20px;
+            }
+            &:hover {
+                background: #E05941 none repeat scroll 0 0;
+            }
+        }
+    }
+}
+
+.voopoSoftware {
+    .poly1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .poly2 {
+        position: absolute;
+        top: 215px;
+        left: 236px;
+    }
+}
+
+@media #{$xlg-layout} {
+    .voopoSoftware .shape1 {
+        bottom: 50%;
+
+        width: 50%;
+
+        transform: translateY(50%);
+    }
+    .voopoSoftware .shape1 img {
+        width: 100%;
+    }
+    .voopoSoftware {
+        padding-bottom: 120px;
+    }
+}
+
+@media #{$lg-layout} {
+    .voopoSoftware .shape1 {
+        bottom: 50%;
+
+        width: 50%;
+
+        transform: translateY(50%);
+    }
+    .voopoSoftware .shape1 img {
+        width: 100%;
+    }
+    .voopoSoftware {
+        padding-bottom: 120px;
+    }
+    .downloadBtn {
+        margin: 38px -20px 0;
+    }
+    .voopoSoftware .sftBgColor {
+        padding-top: 120px;
+    }
+}
+
+@media #{$md-layout} {
+    .voopoSoftware .shape1 {
+        bottom: 50%;
+
+        width: 45%;
+
+        transform: translateY(50%);
+    }
+    .voopoSoftware .shape1 img {
+        width: 100%;
+    }
+    .voopoSoftware {
+        padding-bottom: 120px;
+    }
+    .voopoSoftware .sftBgColor {
+        padding-top: 113px;
+        padding-bottom: 57px;
+    }
+    .downloadBtn {
+        margin: 22px -20px 0;
+    }
+}
+
+@media #{$sm-layout} {
+    .voopoSoftware .shape1 {
+        bottom: 50%;
+
+        width: 50%;
+
+        transform: translateY(50%);
+    }
+    .voopoSoftware .shape1 img {
+        width: 100%;
+    }
+    .voopoSoftware {
+        padding-bottom: 120px;
+    }
+    .voopoSoftware .shape1 {
+        position: inherit;
+        bottom: 0;
+
+        width: 100%;
+        padding-top: 55px;
+
+        transform: translateY(0px);
+    }
+    .voopoSoftware .sftBgColor {
+        padding-top: 50px;
+    }
+    .voopoSoftware {
+        padding-bottom: 60px;
+    }
+}
+
+@media #{$xs-layout} {
+    .voopoSoftware .poly1 {
+        top: 24px;
+        left: 11px;
+    }
+    .voopoSoftware .poly2 {
+        top: 41px;
+        left: 230px;
+    }
+}
+
+@media #{$xxs-layout} {
+    .voopoSoftware .content h2 {
+        font-size: 28px;
+        line-height: 39px;
+    }
+    .voopoSoftware .content p {
+        font-size: 14px;
+        line-height: 24px;
+
+        margin-bottom: 12px;
+    }
+    .downloadBtn {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: 30px -20px 0;
+    }
+    .downloadBtn li + li {
+        margin-top: 20px;
+    }
+    .voopoSoftware .sftBgColor {
+        padding-top: 113px;
+    }
+}

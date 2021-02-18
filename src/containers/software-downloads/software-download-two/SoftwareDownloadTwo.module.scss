@@ -1,0 +1,94 @@
+@import "../../../assets/scss/variables";
+@import "../software-download-one/SoftwareDownload.module.scss";
+
+.voopoSoftware {
+    &.softwareStyle2 {
+        overflow: hidden;
+
+        padding-top: 110px;
+        padding-bottom: 0;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        .content {
+            p {
+                margin-bottom: 0;
+                padding: 0 27%;
+            }
+        }
+        .downloadBtn {
+            justify-content: center;
+
+            margin: 40px -20px 0;
+            li {
+                a {
+                    transition: 0.5s;
+
+                    color: #0D348C;
+                    background: #FFFFFF none repeat scroll 0 0;
+                    &:hover {
+                        color: #010F54;
+                        background: $theme-color;
+                    }
+                }
+            }
+        }
+        .thumb {
+            position: relative;
+
+            margin-top: 38px;
+            margin-bottom: -155px;
+        }
+    }
+}
+
+@media #{$lg-layout} {
+    .voopoSoftware.softwareStyle2 .content p {
+        padding: 0 20%;
+    }
+    .voopoSoftware.softwareStyle2 .thumb img {
+        width: 100%;
+    }
+    .voopoSoftware.softwareStyle2 .thumb {
+        margin-bottom: 0;
+    }
+}
+
+@media #{$md-layout} {
+    .voopoSoftware.softwareStyle2 .content p {
+        padding: 0 11%;
+    }
+    .voopoSoftware.softwareStyle2 .thumb {
+        margin-bottom: 0;
+    }
+    .voopoSoftware.softwareStyle2 .thumb img {
+        width: 100%;
+    }
+    .voopoSoftware.softwareStyle2 .thumb {
+        margin-bottom: 0;
+    }
+}
+
+@media #{$sm-layout} {
+    .voopoSoftware.softwareStyle2 .content p {
+        padding: 0;
+    }
+    .voopoSoftware.softwareStyle2 .downloadBtn {
+        flex-wrap: wrap;
+    }
+    .voopoSoftware.softwareStyle2 .downloadBtn li + li {
+        margin-top: 20px;
+    }
+    .voopoSoftware.softwareStyle2 .downloadBtn li {
+        flex-basis: 100%;
+    }
+    .voopoSoftware.softwareStyle2 .thumb img {
+        width: 100%;
+    }
+    .voopoSoftware.softwareStyle2 .thumb {
+        margin-bottom: 0;
+    }
+    .voopoSoftware.softwareStyle2 {
+        padding-top: 60px;
+    }
+}

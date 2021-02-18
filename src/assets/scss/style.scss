@@ -1,0 +1,18 @@
+/* external styles */
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~animate.css/animate.min.css";
+@import "~react-modal-video/scss/modal-video.scss";
+@import "~swiper/css/swiper.css";
+
+/* Needed Files*/
+
+@import "variables";
+@import "mixins";
+
+/*******************
+Basic Styles
+********************/
+
+@import "basic/reset";
+@import "basic/typography";
+@import "basic/helper-class";

@@ -1,0 +1,162 @@
+@import "../../../assets/scss/variables";
+
+.voopoWorkingProcess {
+    padding-top: 120px;
+    padding-bottom: 110px;
+    .thumbPoss {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.voopoProcess {
+    display: flex;
+
+    margin-top: 60px;
+    .count {
+        margin-right: 40px;
+        span {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 60px;
+
+            display: inline-block;
+
+            width: 60px;
+            height: 60px;
+
+            text-align: center;
+
+            color: #F5F8FA;
+            border-radius: 100%;
+            background: linear-gradient(to left, #FCCEC8, #E05941);
+        }
+    }
+    .content {
+        h4 {
+            font-size: 24px;
+            line-height: 40px;
+
+            margin-bottom: 12px;
+
+            color: #010F54;
+        }
+        p {
+            font-size: 16px;
+            line-height: 27px;
+
+            margin: 0;
+        }
+    }
+}
+
+.worksInner .section__title--2 span {
+    color: #EEF3F6;
+}
+
+.worksInner .section__title--2 h2 {
+    color: #EEF3F6;
+}
+
+.worksInner p {
+    font-size: 16px;
+    line-height: 27px;
+
+    margin: 0;
+    padding-right: 16%;
+
+    color: #EEF3F6;
+}
+
+.works {
+    display: flex;
+    .icons {
+        margin-right: 17px;
+        i {
+            font-size: 16px;
+
+            color: #EEF3F6;
+        }
+    }
+    .content {
+        h2 {
+            font-size: 24px;
+            line-height: 27px;
+
+            margin-bottom: 20px;
+
+            color: #EEF3F6;
+        }
+        p {
+            font-size: 16px;
+            line-height: 27px;
+
+            margin: 0;
+
+            color: #EEF3F6;
+        }
+    }
+    & + .works {
+        margin-top: 40px;
+    }
+}
+
+.voopoWorks {
+    padding: 115px 0;
+}
+
+@media #{$xlg-layout} {
+    .voopoWorkingProcess .thumbPoss {
+        right: -263px;
+    }
+}
+
+@media #{$lg-layout} {
+    .voopoWorkingProcess .thumbPoss {
+        right: -41%;
+
+        width: 100%;
+    }
+    .voopoWorkingProcess .thumbPoss img {
+        width: 100%;
+    }
+}
+
+@media #{$md-layout} {
+    .voopoWorkingProcess .thumbPoss img {
+        width: 100%;
+    }
+    .voopoWorkingProcess .thumbPoss {
+        right: -72%;
+    }
+}
+
+@media #{$sm-layout} {
+    .voopoWorkingProcess .thumbPoss {
+        position: relative;
+
+        margin-top: 30px;
+    }
+    .voopoWorkingProcess .thumbPoss img {
+        width: 100%;
+    }
+
+    .voopoWorkingProcess {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .voopoWorks {
+        padding: 60px 0;
+    }
+}
+
+@media #{$xs-layout} {
+    .voopoProcess .count {
+        margin-right: 20px;
+    }
+    .voopoProcess .content h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
